@@ -93,11 +93,13 @@
     }
 
     function abrirInstagram() {
-        const username = "TU_USUARIO";
-        const app = `instagram://user?username=${username}`;
-
+        const instagramURL = "https://www.instagram.com/ebenezer_chalco?igsh=MXBneWdua3ZheXduYg==";
+    
+        // Intento abrir la app
+        const app = "instagram://app";
         window.location.href = app;
-
+    
+        // Fallback al link directo
         setTimeout(() => {
             window.open(instagramURL, '_blank');
         }, 1200);
